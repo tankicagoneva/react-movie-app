@@ -9,6 +9,7 @@ import {
   API_URL,
 } from "../config";
 
+import Header from "./elements/Header";
 import HeroImage from "./elements/HeroImage";
 import SearchBar from "./elements/SearchBar";
 import Grid from "./elements/Grid";
@@ -25,6 +26,7 @@ const Home = () => {
   console.log(state);
   return (
     <>
+      <Header />
       <HeroImage />
       <SearchBar />
       <Grid />
