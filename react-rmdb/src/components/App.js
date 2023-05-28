@@ -1,11 +1,16 @@
 import React from "react";
-import Header from "./elements/Header";
+
+import Header from "./elements/Header.js";
+import Home from "./Home";
+
+import { GlobalStyle } from "./styles/GlobalStyle";
 
 const App = () => (
-  <div>
+  <>
     <Header />
-    <h1>React Movie DB</h1>
-  </div>
+    <Home />
+    <GlobalStyle />
+  </>
 );
 
 export default App;
