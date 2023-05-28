@@ -9,7 +9,7 @@ import {
   API_URL,
 } from "../config";
 
-import Header from "./elements/Header";
+// import Header from "./elements/Header";
 import HeroImage from "./elements/HeroImage";
 import SearchBar from "./elements/SearchBar";
 import Grid from "./elements/Grid";
@@ -26,8 +26,11 @@ const Home = () => {
   console.log(state);
   return (
     <>
-      <Header />
-      <HeroImage />
+      <HeroImage
+        image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.heroImage.backdrop_path}`}
+        title={state.heroImage.original_title}
+        text={state.heroImage.overview}
+      />{" "}
       <SearchBar />
       <Grid />
       <MovieThumb />
