@@ -1,17 +1,5 @@
 import React from "react";
-import { StyledHeroImage } from "../styles/StyledHeroImage.js";
 
-
-const HeroImage = ({ image, title, text }) => (
-  <StyledHeroImage image={image}>
-    <div className="heroimage-content">
-      HeroImage
-      <div className="heroimage-text">
-        <h1>{title}</h1>
-        <p>{text}</p>
-      </div>
-    </div>
-  </StyledHeroImage>
-);
+const HeroImage = () => <div> HeroImage </div>;
 
 export default HeroImage;
